@@ -1,0 +1,12 @@
+[{
+  "name"        : "express-kick-starter",
+  "script"      : "./bin/www",
+  "instances"   : "max",
+  "ignoreWatch" : ["[\\/\\\\]\\./", "node_modules", ".log"],
+  "watch"       : "true",
+  "exec_mode"   : "cluster_mode",
+  "one_launch_only": true,
+  "env": {
+    "NODE_ENV": "production"
+  }
+}]

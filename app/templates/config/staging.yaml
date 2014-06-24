@@ -1,0 +1,7 @@
+oauth:
+  twitter:
+    clientID: YOUR_TWITTER_CLIENT_ID
+    clientSecret: YOUR_TWITTER_CLIENT_SECRET
+  facebook:
+    clientID: YOUR_FACEBOOK_CLIENT_ID
+    clientSecret: YOUR_FACEBOOK_CLIENT_SECRET

@@ -1,0 +1,16 @@
+{
+  "appenders": [
+    {
+      "type": "console",
+      "format": ":remote-addr"
+    },
+    {
+      "category": "app",
+      "type": "file",
+      "filename": "logs/application.log",
+      "format": ":remote-addr",
+      "pattern": "-yyyy-mm-dd"
+    }
+  ],
+  "replaceConsole": true
+}

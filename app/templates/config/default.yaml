@@ -1,0 +1,30 @@
+session:
+  salt: "<%= sessionSalt %>"
+jwt:
+  options:
+    secret: "<%= jwtSalt %>"
+oauth:
+  twitter:
+    consumerKey: YOUR_TWITTER_CONSUMER_KEY
+    consumerSecret: YOUR_TWITTER_CONSUMER_SECRET
+    callbackURL: YOUR_TWITTER_CALLBACK_URL
+  facebook:
+    clientID: YOUR_FACEBOOK_CLIENT_ID
+    clientSecret: YOUR_FACEBOOK_CLIENT_SECRET
+    callbackURL: YOUR_FACEBOOK_CALLBACK_URL
+mongoose:
+  db: "mongodb://localhost/my_database"
+  options:
+    server:
+      socketOptions:
+        keepAlive: 1
+redis:
+  db:
+    host: localhost
+    port: 6379
+  session:
+    host: localhost
+    port: 6379
+    db: 0
+    ttl: 7776000 # 60 * 60 * 24 * 90 (90days)
+    prefix: "sess:"

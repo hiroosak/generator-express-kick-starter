@@ -1,0 +1,13 @@
+node_modules/
+
+public/javascripts/
+public/stylesheets/
+
+*.swp
+npm-debug.log
+
+.sass-cache/
+
+config/runtime.json
+*.log
+test/coverage/

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  if user._id
+    p Hello #{user.profile.name}
+  else
+    p
+      a(href="/auth/twitter", role="button").btn.btn-info.btn-lg
+        i.fa.fa-twitter-square  login 
+    p
+      a(href="/auth/facebook", role="button").btn.btn-info.btn-lg
+        i.fa.fa-facebook-square  login

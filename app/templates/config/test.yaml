@@ -1,0 +1,20 @@
+oauth:
+  twitter:
+    clientID: YOUR_TWITTER_CLIENT_ID
+    clientSecret: YOUR_TWITTER_CLIENT_SECRET
+  facebook:
+    clientID: YOUR_FACEBOOK_CLIENT_ID
+    clientSecret: YOUR_FACEBOOK_CLIENT_SECRET
+mongoose:
+  db: "mongodb://localhost/my_database_test"
+  options:
+redis:
+  db:
+    host: localhost
+    port: 6379
+  session:
+    host: localhost
+    port: 6379
+    db: 0
+    ttl: 7776000 # 60 * 60 * 24 * 90 (90days)
+    prefix: "sess:"

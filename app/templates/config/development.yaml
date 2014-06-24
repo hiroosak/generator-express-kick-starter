@@ -1,0 +1,28 @@
+oauth:
+  twitter:
+    consumerKey: 'JdBFKN8ine2JdrTRNctg'
+    consumerSecret: 'p8t5KCQZkG03mrLtQJhNnYgD7jUEZm6ecMEfvHc'
+    callbackURL: '/auth/twitter/callback'
+  facebook:
+    clientID: '726595747385852'
+    clientSecret: '3f1b24cd555ca446c67c74f640712839'
+    callbackURL: 'http://dev.nodeapp.jp:3000/auth/facebook/callback'
+#
+# Redis
+#
+redis:
+  session:
+    host: localhost
+    port: 6379
+    db: 0
+    ttl: 7776000 # 60 * 60 * 24 * 90 (90days)
+    prefix: "sess:"
+  db:
+    host: localhost
+    port: 6379
+  session:
+    host: localhost
+    port: 6379
+    db: 0
+    ttl: 7776000 # 60 * 60 * 24 * 90 (90days)
+    prefix: "sess:"
