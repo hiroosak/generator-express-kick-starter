@@ -1,4 +1,4 @@
-# generator-express-kick-starter
+# generator-express-kick-starter [![Build Status](https://travis-ci.org/hiroosak/generator-express-kick-starter.svg?branch=master)](https://travis-ci.org/hiroosak/generator-express-kick-starter)
 
 > [Yeoman](http://yeoman.io) generator
 
