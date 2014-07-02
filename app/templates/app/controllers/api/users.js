@@ -4,7 +4,7 @@ var _ = require('lodash');
 
 /**
  * @swagger
- * resourcePath: /api/1
+ * resourcePath: /api/1/users
  * description: User API
  */
 
