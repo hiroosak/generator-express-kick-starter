@@ -5,7 +5,7 @@
 ## Getting Started
 
 ```bash
-$ npm install -g yo
+$ npm install -g yo bower
 ```
 
 ### Yeoman Generators
