@@ -13,7 +13,7 @@ var _ = require('lodash');
  * path: /api/1/users/me
  * operations:
  *   - httpMethod: GET
- *     summary: ログインユーザー情報の取得
+ *     summary: Get login user summary
  *     notes:
  *     responseClass: User
  *     nickname: Login
@@ -43,7 +43,7 @@ exports.me = function(req, res) {
  * path: /api/1/users/{userId}
  * operations:
  *   - httpMethod: GET
- *     summary: userId のユーザー情報
+ *     summary: {userId}'s user data
  *     notes:
  *     responseClass: User
  *     nickname: UserShow
