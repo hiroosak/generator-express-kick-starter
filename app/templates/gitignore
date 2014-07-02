@@ -1,0 +1,15 @@
+node_modules/
+
+public/components/
+public/javascripts/
+public/stylesheets/
+
+*.swp
+*.bak
+npm-debug.log
+
+.sass-cache/
+
+config/runtime.json
+*.log
+test/coverage/
