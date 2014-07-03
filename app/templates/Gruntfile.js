@@ -61,12 +61,15 @@ module.exports = function(grunt) {
         src: ['assets/javascripts/**/*.js', 'test/**/*.js']
       }
     },
-    compass: {
+    sass: {
       dist: {
-        options: {
-          sassDir: "assets/stylesheets/",
-          cssDir:  "public/stylesheets/"
-        }
+        files: [{
+          expand: true,
+          cwd: "./",
+          src: ["assets/stylesheets/**/*.{css,scss,sass}"],
+          dest: ".",
+          ext: ".css"
+        }]
       }
     },
     cssmin: {
@@ -74,7 +77,8 @@ module.exports = function(grunt) {
         banner: '<%= banner %>'
       },
       files: {
-        'public/stylesheets/<%= pkg.name %>.min.css': ['public/stylesheets/**/*.css']
+        src: ['public/stylesheets/**/*.css', '!public/stylesheets/**/*.min.css'],
+        dest: 'public/stylesheets/<%= pkg.name %>.min.css'
       }
     },
     mocha: {     // grunt-mocha(client-side mocha test)
@@ -136,7 +140,7 @@ module.exports = function(grunt) {
     },
     concurrent: { // grunt-concurrent
       test: ['jshint', 'spec'],
-      concat: ['compass', 'concat'],
+      concat: ['sass', 'concat'],
       minify: ['uglify', 'cssmin'],
       dev: {
         tasks: ['nodemon:dev', 'node-inspector', 'watch:server'],
