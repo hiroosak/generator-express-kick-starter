@@ -1,12 +1,3 @@
-oauth:
-  twitter:
-    consumerKey: 'JdBFKN8ine2JdrTRNctg'
-    consumerSecret: 'p8t5KCQZkG03mrLtQJhNnYgD7jUEZm6ecMEfvHc'
-    callbackURL: '/auth/twitter/callback'
-  facebook:
-    clientID: '726595747385852'
-    clientSecret: '3f1b24cd555ca446c67c74f640712839'
-    callbackURL: 'http://dev.nodeapp.jp:3000/auth/facebook/callback'
 #
 # Redis
 #
